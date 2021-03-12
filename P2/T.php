@@ -13,12 +13,9 @@ class Laptop {
     }
      
    public function restart_laptop($pemilik,$merk) {
-        return "Matikan laptop $merk punya $pemilik";
+        echo "Matikan laptop $merk punya $pemilik. ";
         return "Hidupkan laptop $merk punya $pemilik";
-    }
-     
-
-   
+   }   
 }
 
 $laptopA= new Laptop();
@@ -30,4 +27,4 @@ echo $laptopA->hidupkan_laptop("A", "ASUS");
 echo "<br>";
 echo $laptopB->matikan_laptop("B", "Acer");
 echo "<br>";
-echo $laptopC->restart_laptop("C", "Lenovo").". ".$laptopC->restart_laptop("C", "Lenovo");
+echo $laptopC->restart_laptop("C", "Lenovo");
