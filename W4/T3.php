@@ -12,24 +12,24 @@ class Tablet {
 
 class Handphone extends Tablet {
   private function getMerkTipe() {
-    return "$this->merk $this->tipe";
+    return $this->merk.$this->tipe;
   }
   public function beliHandphone(){
-    return "Beli handphone " . $this->getMerkTipe();
+    return $this->getMerkTipe();
   }
-  public function cekmemory(){
-    return "$this->tipe punya memory sebesar $this->memory GB";
+  public function mem(){
+    return $this->tipe.$this->memory;
   }
-  public function Spek(){
-    return "Merk: $this->merk<br>
-    Tipe: $this->tipe<br>
-    memory: $this->memory GB<br>";
+  public function spek(){
+    return "Merk:   $this->merk<br>
+            Tipe:   $this->tipe<br>
+            memory: $this->memory<br>";
   }
 }
 
 $hp = new Handphone();
 $hp->merk = "Xiaomi";
 $hp->tipe = "Redmi Note 9 Pro";
-$hp->memory = 8;
+$hp->memory = "8GB";
 
-echo $hp->Spek();
+echo $hp->spek();
