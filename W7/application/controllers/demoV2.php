@@ -7,7 +7,7 @@ class demoV2 extends CI_Controller{
     }
 
     public function index(){
-        $this->load->views('demoView');
+        $this->load->view('demoView');
     }
 }
 

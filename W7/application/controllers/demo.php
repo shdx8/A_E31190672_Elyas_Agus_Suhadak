@@ -1,6 +1,6 @@
 <?php 
 class demo_con extends CI_Controller {
-	public function index(){
+	function index(){
 		echo "<h2>demo controller</h2>";
 		echo "<br>function index";
 	}
