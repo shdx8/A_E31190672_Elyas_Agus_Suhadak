@@ -7,11 +7,14 @@
   </div>
   <div class="card-body">
     <div class="table-responsive">
-      <a href="index" class="btn btn-secondary" role="button">Kembali</a>
+      <!-- membuat tombol kembali untuk kembali ke index -->
+      <a href="index" class="btn btn-secondary" role="button"><i class="fas fa-chevron-left"></i> Kembali</a>
       <br>            
       <br>          
       <div class="container">
+      <!-- membuat form didalam container -->
         <form method="post" action="<?php echo base_url('Mahasiswa/input');?>" class="user">
+        <!-- form grup intuk beberapa type inputs -->
           <div class="form-group">
             <label>Username:</label>
             <input type="text" name="username" class="form-control form-control-user" placeholder="Username Maximal 15 Character..." required>
@@ -32,8 +35,7 @@
               <option value="2">User</option>
             </select>
           </div>
-          <!-- <button type="reset" value="" class="btn btn-warning btn-lg"><i class="fas fa-redo"></i></button> -->
-          <br>
+          <button type="reset" value="" class="btn btn-warning btn-lg"><i class="fas fa-redo"></i></button>
           <button type="submit" name="submit" class="btn btn-success btn-lg btn-lg"><i class="fas fa-save"></i> Tambah</button>
           <br>
           <br>
