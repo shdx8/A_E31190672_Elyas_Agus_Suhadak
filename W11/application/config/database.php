@@ -9,6 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 | For complete instructions please consult the 'Database Connection'
 | page of the User Guide.
+|	<!-- shdx -->
 |
 | -------------------------------------------------------------------
 | EXPLANATION OF VARIABLES
@@ -78,7 +79,7 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'root',//username local database
 	'password' => '',
-	'database' => 'ci',//nama database yang digunakan
+	'database' => 'ci',//nama database yang digunakan..
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
